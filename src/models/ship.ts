@@ -125,7 +125,7 @@ export class Ship {
  * @swagger
  * components:
  *   schemas:
- *     ShipFitting:
+ *     Fitting:
  *       type: object
  *       properties:
  *         id:  
@@ -215,7 +215,7 @@ export class ShipFittingLimit {
  * @swagger
  * components:
  *   schemas:
- *     ShipModification:
+ *     Modification:
  *       type: object
  *       properties:
  *         id:
@@ -250,7 +250,7 @@ export class ShipModification {
  * @swagger
  * components:
  *   schemas:
- *     ShipWeapon:
+ *     Weapon:
  *       type: object
  *       properties:
  *         id:
@@ -410,7 +410,7 @@ export class ShipDefence {
  * @swagger
  * components:
  *   schemas:
- *     ShipCargo:
+ *     Cargo:
  *       type: object
  *       properties:
  *         id:
