@@ -27,3 +27,10 @@ This API provides endpoints for managing space pirates and their ships. It is bu
 ## Swagger Documentation
 
 Once the server is running, the API documentation is available at `http://localhost:3000/api-docs`.
+
+## To Do Eventually
+
+- Add authentication
+- Move swagger docs to a static file generated at build time
+- Minify the api code to shrink total image size
+- Move the shared base docker image into a custom built / updated docker image

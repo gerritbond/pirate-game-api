@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only app.ts"
+    "dev": "ts-node-dev --poll --respawn --transpile-only app.ts",
+    "flyway:install": "flyway info -c .flyway.js",
+    "flyway:info": "flyway info -c .flyway.js",
+    "flyway:validate": "flyway validate -c .flyway.js",
+    "flyway:migrate": "flyway migrate -c .flyway.js",
+    "flyway:clean": "flyway clean -c .flyway.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -34,6 +39,7 @@
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "node-flywaydb": "3.0.7",
     "prettier": "^3.3.3",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.5.4"
